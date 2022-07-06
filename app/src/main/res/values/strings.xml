@@ -12,4 +12,5 @@
     <string name="genres">Genres :</string>
     <string name="favorite">Favorite</string>
     <string name="no_favorite_movies">No favorite movies</string>
+    <string name="title">Title</string>
 </resources>

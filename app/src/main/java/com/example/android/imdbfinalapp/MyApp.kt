@@ -3,8 +3,11 @@ package com.example.android.imdbfinalapp
 import android.app.Application
 import android.widget.Toast
 import androidx.work.*
-import com.example.android.imdbfinalapp.di.*
-import com.example.android.imdbfinalapp.workmanagers.MovieWorker
+import com.example.android.imdbfinalapp.presentation.di.movieDBModule
+import com.example.android.imdbfinalapp.presentation.di.networkModule
+import com.example.android.imdbfinalapp.presentation.di.repositoryModule
+import com.example.android.imdbfinalapp.presentation.di.viewModelModule
+import com.example.android.imdbfinalapp.domain.workmanagers.MovieWorker
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import java.util.concurrent.TimeUnit
@@ -17,7 +20,6 @@ class MyApp : Application() {
             modules(listOf(viewModelModule, networkModule, movieDBModule, repositoryModule))
         }
 
-        Toast.makeText(applicationContext, "MYAPP", Toast.LENGTH_SHORT).show()
         val networkConstraints =
             Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build()
         val movieWorker = PeriodicWorkRequest
