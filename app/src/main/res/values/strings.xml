@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IMDB Final App</string>
+    <string name="now_playing">Now playing</string>
+    <string name="retry">Retry</string>
+    <string name="error">Error</string>
+    <string name="a">A</string>
+    <string name="no_search_result">No search result</string>
+    <string name="search">Search</string>
+    <string name="detail">Detail</string>
+    <string name="overview">Overview:</string>
+    <string name="rating">Rating :</string>
+    <string name="genres">Genres :</string>
+    <string name="favorite">Favorite</string>
+    <string name="no_favorite_movies">No favorite movies</string>
+</resources>
